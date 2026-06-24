@@ -10,8 +10,7 @@
     <link rel="canonical" href="https://bharathantravels.com/" />
 
     <!-- ===== FAVICON ===== -->
-    <!-- Replace 'favicon.ico' with your actual file path or URL -->
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="file_00000000e9a071fa82229adec6570afd.png" type="image/png" />
     <link rel="apple-touch-icon" href="file_00000000e9a071fa82229adec6570afd.png" />
 
     <meta name="theme-color" content="#0A2E5C" />
@@ -250,29 +249,14 @@
         <div class="hero-overlay" aria-hidden="true"></div>
         <div class="container">
             <!-- ===== YOUR CUSTOM LOGO IMAGE ===== -->
-            <!-- Replace 'logo.png' with your actual file path or URL -->
-            <img src="logo.png" alt="Bharathan Travels Logo" class="brand-logo" />
+            <img src="file_00000000e9a071fa82229adec6570afd.png" alt="Bharathan Travels Logo" class="brand-logo" />
 
             <h1>Coming Soon</h1>
             <p class="sub-text">
                 We're getting ready to serve you with safe, reliable &amp; affordable cab services in Trichy and across India. Stay tuned!
             </p>
 
-            <!-- Email subscription -->
-            <form class="subscribe-form" id="subscribeForm">
-                <input type="email" placeholder="Enter your email to get notified" required aria-label="Email address" />
-                <button type="submit" class="btn">
-                    <i class="fa-regular fa-bell" aria-hidden="true"></i> Notify Me
-                </button>
-            </form>
 
-            <!-- Contact links -->
-            <div class="contact-links">
-                <a href="tel:+919443312345"><i class="fa-solid fa-phone" aria-hidden="true"></i> Call</a>
-                <a href="mailto:info@bharathantravels.com"><i class="fa-solid fa-envelope" aria-hidden="true"></i> Email</a>
-                <a href="https://wa.me/919443312345" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i> WhatsApp</a>
-                <a href="https://instagram.com/bharathantravels" target="_blank" rel="noopener"><i class="fa-brands fa-instagram" aria-hidden="true"></i> Instagram</a>
-            </div>
 
             <div class="footer-note">
                 &copy; 2025 Bharathan Travels &bull; Trichy, Tamil Nadu
@@ -280,37 +264,6 @@
         </div>
     </section>
 
-    <!-- Toast notification -->
-    <div id="toast" style="position:fixed; bottom:30px; left:50%; transform:translateX(-50%) translateY(80px); background:#28a745; color:#fff; padding:12px 28px; border-radius:50px; font-weight:600; font-family:'Inter',sans-serif; box-shadow:0 8px 30px rgba(0,0,0,0.3); opacity:0; transition:0.4s; pointer-events:none; z-index:999; white-space:nowrap;">Thank you! We'll notify you at launch.</div>
 
-    <script>
-        (function() {
-            const form = document.getElementById('subscribeForm');
-            const toast = document.getElementById('toast');
-            let toastTimer;
-
-            function showToast(msg) {
-                clearTimeout(toastTimer);
-                toast.textContent = msg;
-                toast.style.opacity = '1';
-                toast.style.transform = 'translateX(-50%) translateY(0)';
-                toastTimer = setTimeout(() => {
-                    toast.style.opacity = '0';
-                    toast.style.transform = 'translateX(-50%) translateY(80px)';
-                }, 3500);
-            }
-
-            form.addEventListener('submit', function(e) {
-                e.preventDefault();
-                const email = form.querySelector('input[type="email"]').value.trim();
-                if (!email || !email.includes('@')) {
-                    showToast('Please enter a valid email address.');
-                    return;
-                }
-                showToast('Thank you! We\'ll notify you at launch.');
-                form.reset();
-            });
-        })();
-    </script>
 </body>
 </html>
