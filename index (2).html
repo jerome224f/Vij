@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Bharathan Travels – Coming Soon. Stay tuned for safe, reliable & affordable cab services in Trichy and across India." />
+    <meta name="keywords" content="Bharathan Travels, coming soon, cab service Trichy, taxi service" />
+    <meta name="author" content="Bharathan Travels" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://bharathantravels.com/" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230A2E5C'/><text x='50' y='68' font-size='52' text-anchor='middle' font-family='Arial, sans-serif' fill='%23F5A623'>B</text></svg>" />
+    <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230A2E5C'/><text x='50' y='68' font-size='52' text-anchor='middle' font-family='Arial, sans-serif' fill='%23F5A623'>B</text></svg>" />
+    <meta name="theme-color" content="#0A2E5C" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://bharathantravels.com/" />
+    <meta property="og:title" content="Bharathan Travels – Coming Soon" />
+    <meta property="og:description" content="We're launching soon. Stay tuned for safe, reliable & affordable cab services in Trichy and across India." />
+    <meta property="og:image" content="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?w=1200&h=630&fit=crop" />
+    <meta property="og:site_name" content="Bharathan Travels" />
+    <meta property="og:locale" content="en_IN" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Bharathan Travels – Coming Soon" />
+    <meta name="twitter:description" content="We're launching soon. Stay tuned for safe, reliable & affordable cab services in Trichy and across India." />
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?w=1200&h=630&fit=crop" />
+
+    <title>Bharathan Travels – Coming Soon</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+    <style>
+        /* ----- Same variables & base styles as full site ----- */
+        :root {
+            --color-primary: #0A2E5C;
+            --color-primary-dark: #061d3a;
+            --color-accent: #F5A623;
+            --color-accent-hover: #e69510;
+            --color-white: #FFFFFF;
+            --color-gray-600: #6c757d;
+            --font-heading: 'Poppins', sans-serif;
+            --font-body: 'Inter', sans-serif;
+            --shadow-lg: 0 16px 48px rgba(0, 0, 0, 0.12);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            height: 100%;
+            font-family: var(--font-body);
+            color: var(--color-white);
+            background-color: var(--color-primary);
+        }
+
+        /* ----- Full-page hero with overlay ----- */
+        .hero {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: url('https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?w=1920&h=1080&fit=crop&auto=format&q=80') center center / cover no-repeat;
+            background-attachment: fixed;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .hero-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(180deg,
+                    rgba(10, 46, 92, 0.92) 0%,
+                    rgba(10, 46, 92, 0.70) 50%,
+                    rgba(10, 46, 92, 0.50) 100%);
+            z-index: 1;
+        }
+
+        .container {
+            position: relative;
+            z-index: 2;
+            max-width: 700px;
+            padding: 40px 24px;
+            width: 100%;
+        }
+
+        /* ----- Original Logo Style (same as before) ----- */
+        .original-logo {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            line-height: 1.1;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 2rem;
+        }
+        .original-logo .brand {
+            font-family: var(--font-heading);
+            font-weight: 800;
+            font-size: 3rem;
+            color: var(--color-white);
+            text-shadow: 0 2px 12px rgba(0, 0, 0, 0.5);
+        }
+        .original-logo .tagline {
+            font-family: var(--font-body);
+            font-weight: 400;
+            font-size: 1rem;
+            letter-spacing: 6px;
+            color: var(--color-accent);
+            text-shadow: 0 1px 6px rgba(0, 0, 0, 0.3);
+            margin-top: -4px;
+        }
+
+        /* ----- Main headline ----- */
+        h1 {
+            font-family: var(--font-heading);
+            font-weight: 700;
+            font-size: clamp(2.4rem, 6vw, 3.8rem);
+            color: var(--color-white);
+            text-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.02em;
+        }
+
+        .sub-text {
+            font-size: 1.2rem;
+            color: rgba(255, 255, 255, 0.85);
+            max-width: 500px;
+            margin: 0 auto 2rem;
+            line-height: 1.6;
+            text-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* ----- Email subscription form (optional) ----- */
+        .subscribe-form {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            justify-content: center;
+            max-width: 480px;
+            margin: 0 auto 1.5rem;
+        }
+        .subscribe-form input {
+            flex: 1 1 220px;
+            padding: 14px 20px;
+            border: none;
+            border-radius: 50px;
+            font-size: 1rem;
+            font-family: var(--font-body);
+            background: rgba(255, 255, 255, 0.9);
+            color: var(--color-primary);
+            outline: none;
+            box-shadow: var(--shadow-lg);
+            transition: 0.2s;
+        }
+        .subscribe-form input:focus {
+            background: #fff;
+            box-shadow: 0 0 0 3px var(--color-accent);
+        }
+        .subscribe-form .btn {
+            background: var(--color-accent);
+            border: none;
+            color: var(--color-primary-dark);
+            font-weight: 700;
+            font-size: 1rem;
+            padding: 14px 32px;
+            border-radius: 50px;
+            cursor: pointer;
+            font-family: var(--font-body);
+            transition: 0.2s;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            box-shadow: var(--shadow-lg);
+        }
+        .subscribe-form .btn:hover {
+            background: var(--color-accent-hover);
+            transform: scale(1.02);
+        }
+
+        /* ----- Social / contact links (same style) ----- */
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            margin-top: 1.5rem;
+            flex-wrap: wrap;
+        }
+        .contact-links a {
+            color: rgba(255, 255, 255, 0.75);
+            font-size: 1.2rem;
+            text-decoration: none;
+            transition: 0.2s;
+            padding: 6px 14px;
+            border-radius: 30px;
+            background: rgba(255, 255, 255, 0.06);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .contact-links a:hover {
+            color: var(--color-accent);
+            background: rgba(255, 255, 255, 0.12);
+            border-color: var(--color-accent);
+        }
+        .contact-links i {
+            color: var(--color-accent);
+        }
+
+        /* ----- Small footer note ----- */
+        .footer-note {
+            margin-top: 2.5rem;
+            font-size: 0.85rem;
+            color: rgba(255, 255, 255, 0.4);
+            letter-spacing: 0.5px;
+        }
+
+        /* ----- Responsive tweaks ----- */
+        @media (max-width: 480px) {
+            .original-logo .brand {
+                font-size: 2.2rem;
+            }
+            .original-logo .tagline {
+                font-size: 0.75rem;
+                letter-spacing: 4px;
+            }
+            .subscribe-form {
+                flex-direction: column;
+                align-items: stretch;
+            }
+            .subscribe-form input,
+            .subscribe-form .btn {
+                width: 100%;
+                justify-content: center;
+            }
+            .contact-links a {
+                font-size: 1rem;
+                padding: 4px 12px;
+            }
+        }
+
+        /* Reduced motion */
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation-duration: 0.01ms !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <section class="hero">
+        <div class="hero-overlay" aria-hidden="true"></div>
+        <div class="container">
+            <!-- Original logo -->
+            <div class="original-logo">
+                <span class="brand">BHARATHAN</span>
+                <span class="tagline">-TRAVELS-</span>
+            </div>
+
+            <h1>Coming Soon</h1>
+            <p class="sub-text">
+                We're getting ready to serve you with safe, reliable &amp; affordable cab services in Trichy and across India. Stay tuned!
+            </p>
+
+            <!-- Email subscription (simple) -->
+            <form class="subscribe-form" id="subscribeForm">
+                <input type="email" placeholder="Enter your email to get notified" required aria-label="Email address" />
+                <button type="submit" class="btn">
+                    <i class="fa-regular fa-bell" aria-hidden="true"></i> Notify Me
+                </button>
+            </form>
+
+            <!-- Contact links (phone, email, social) -->
+            <div class="contact-links">
+                <a href="tel:+919443312345"><i class="fa-solid fa-phone" aria-hidden="true"></i> Call</a>
+                <a href="mailto:info@bharathantravels.com"><i class="fa-solid fa-envelope" aria-hidden="true"></i> Email</a>
+                <a href="https://wa.me/919443312345" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i> WhatsApp</a>
+                <a href="https://instagram.com/bharathantravels" target="_blank" rel="noopener"><i class="fa-brands fa-instagram" aria-hidden="true"></i> Instagram</a>
+            </div>
+
+            <div class="footer-note">
+                &copy; 2025 Bharathan Travels &bull; Trichy, Tamil Nadu
+            </div>
+        </div>
+    </section>
+
+    <!-- Toast notification -->
+    <div id="toast" style="position:fixed; bottom:30px; left:50%; transform:translateX(-50%) translateY(80px); background:#28a745; color:#fff; padding:12px 28px; border-radius:50px; font-weight:600; font-family:'Inter',sans-serif; box-shadow:0 8px 30px rgba(0,0,0,0.3); opacity:0; transition:0.4s; pointer-events:none; z-index:999; white-space:nowrap;">Thank you! We'll notify you at launch.</div>
+
+    <script>
+        (function() {
+            const form = document.getElementById('subscribeForm');
+            const toast = document.getElementById('toast');
+            let toastTimer;
+
+            function showToast(msg) {
+                clearTimeout(toastTimer);
+                toast.textContent = msg;
+                toast.style.opacity = '1';
+                toast.style.transform = 'translateX(-50%) translateY(0)';
+                toastTimer = setTimeout(() => {
+                    toast.style.opacity = '0';
+                    toast.style.transform = 'translateX(-50%) translateY(80px)';
+                }, 3500);
+            }
+
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const email = form.querySelector('input[type="email"]').value.trim();
+                if (!email || !email.includes('@')) {
+                    showToast('Please enter a valid email address.');
+                    return;
+                }
+                // Simulate success
+                showToast('Thank you! We\'ll notify you at launch.');
+                form.reset();
+            });
+        })();
+    </script>
+</body>
+</html>
