@@ -9,9 +9,11 @@
     <meta name="robots" content="index, follow" />
     <link rel="canonical" href="https://bharathantravels.com/" />
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230A2E5C'/><text x='50' y='68' font-size='52' text-anchor='middle' font-family='Arial, sans-serif' fill='%23F5A623'>B</text></svg>" />
-    <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230A2E5C'/><text x='50' y='68' font-size='52' text-anchor='middle' font-family='Arial, sans-serif' fill='%23F5A623'>B</text></svg>" />
+    <!-- ===== FAVICON ===== -->
+    <!-- Replace 'favicon.ico' with your actual file path or URL -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="logo.png" />
+
     <meta name="theme-color" content="#0A2E5C" />
 
     <!-- Open Graph / Facebook -->
@@ -98,31 +100,14 @@
             width: 100%;
         }
 
-        /* ----- Original Logo Style (same as before) ----- */
-        .original-logo {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            line-height: 1.1;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            margin-bottom: 2rem;
-        }
-        .original-logo .brand {
-            font-family: var(--font-heading);
-            font-weight: 800;
-            font-size: 3rem;
-            color: var(--color-white);
-            text-shadow: 0 2px 12px rgba(0, 0, 0, 0.5);
-        }
-        .original-logo .tagline {
-            font-family: var(--font-body);
-            font-weight: 400;
-            font-size: 1rem;
-            letter-spacing: 6px;
-            color: var(--color-accent);
-            text-shadow: 0 1px 6px rgba(0, 0, 0, 0.3);
-            margin-top: -4px;
+        /* ===== LOGO IMAGE STYLES ===== */
+        .brand-logo {
+            display: block;
+            max-width: 280px;
+            width: 100%;
+            height: auto;
+            margin: 0 auto 1.8rem;
+            filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.5));
         }
 
         /* ----- Main headline ----- */
@@ -145,7 +130,7 @@
             text-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
         }
 
-        /* ----- Email subscription form (optional) ----- */
+        /* ----- Email subscription form ----- */
         .subscribe-form {
             display: flex;
             flex-wrap: wrap;
@@ -192,7 +177,7 @@
             transform: scale(1.02);
         }
 
-        /* ----- Social / contact links (same style) ----- */
+        /* ----- Social / contact links ----- */
         .contact-links {
             display: flex;
             justify-content: center;
@@ -232,12 +217,8 @@
 
         /* ----- Responsive tweaks ----- */
         @media (max-width: 480px) {
-            .original-logo .brand {
-                font-size: 2.2rem;
-            }
-            .original-logo .tagline {
-                font-size: 0.75rem;
-                letter-spacing: 4px;
+            .brand-logo {
+                max-width: 200px;
             }
             .subscribe-form {
                 flex-direction: column;
@@ -268,18 +249,16 @@
     <section class="hero">
         <div class="hero-overlay" aria-hidden="true"></div>
         <div class="container">
-            <!-- Original logo -->
-            <div class="original-logo">
-                <span class="brand">BHARATHAN</span>
-                <span class="tagline">-TRAVELS-</span>
-            </div>
+            <!-- ===== YOUR CUSTOM LOGO IMAGE ===== -->
+            <!-- Replace 'logo.png' with your actual file path or URL -->
+            <img src="logo.png" alt="Bharathan Travels Logo" class="brand-logo" />
 
             <h1>Coming Soon</h1>
             <p class="sub-text">
                 We're getting ready to serve you with safe, reliable &amp; affordable cab services in Trichy and across India. Stay tuned!
             </p>
 
-            <!-- Email subscription (simple) -->
+            <!-- Email subscription -->
             <form class="subscribe-form" id="subscribeForm">
                 <input type="email" placeholder="Enter your email to get notified" required aria-label="Email address" />
                 <button type="submit" class="btn">
@@ -287,7 +266,7 @@
                 </button>
             </form>
 
-            <!-- Contact links (phone, email, social) -->
+            <!-- Contact links -->
             <div class="contact-links">
                 <a href="tel:+919443312345"><i class="fa-solid fa-phone" aria-hidden="true"></i> Call</a>
                 <a href="mailto:info@bharathantravels.com"><i class="fa-solid fa-envelope" aria-hidden="true"></i> Email</a>
@@ -328,7 +307,6 @@
                     showToast('Please enter a valid email address.');
                     return;
                 }
-                // Simulate success
                 showToast('Thank you! We\'ll notify you at launch.');
                 form.reset();
             });
